@@ -41,7 +41,6 @@ class App extends Component {
 
   // get user input and update the userInput state
   handleChange = (event) => {
-    event.preventDefault();
     //console.log(event.target.value);  // user input data
     this.setState({
       [event.target.name]: event.target.value
