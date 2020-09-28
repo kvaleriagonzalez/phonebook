@@ -12,6 +12,8 @@ class App extends Component {
       contacts : [],
       name : "",
       number : "",
+      search : "",
+      searchResults: [],
     };
   }
 
@@ -74,6 +76,21 @@ class App extends Component {
     dbRef.child(contactDelete).remove();
   };
 
+  handleSearch = (event) => {
+    event.preventDefault();
+
+// this.state.search is the state that we want to look for / inside search contact[]
+   const results = this.state.contacts.filter((item) => {
+    return item.contacts.name === this.state.search
+
+   })
+    console.log(results)
+    this.setState({
+      search: "",
+      searchResults: results
+    })
+  
+  }
 
   render() {
     return (
@@ -87,7 +104,10 @@ class App extends Component {
               <ul>
                 {
                   // display  here
-                  this.state.contacts.map((contact) => {
+                  this.state.contacts.map((contact,index) => { if (index > 2) {
+                    return null
+                  }
+
                     return (
                       <li key={contact.key}>
                         <p>
@@ -101,11 +121,11 @@ class App extends Component {
                   })
                 }
             </ul>
-          <SearchBar handleChange={this.handleChange} contacts={this.state.contacts} handleClick={this.handleClick}/>
+          <SearchBar handleChange={this.handleChange} contacts={this.state.contacts} handleSearch={this.handleSearch}/>
           <ul>
             {
               // display  here
-              this.state.contacts.map((contact) => {
+              this.state.searchResults.map((contact) => {
                 return (
                   <li key={contact.key}>
                     <p>

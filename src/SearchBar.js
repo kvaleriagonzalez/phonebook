@@ -9,9 +9,9 @@ class SearchBar extends Component {
                 <h2>Contact list</h2>
                 <form action="" method="get">
                     <label forhtml="search"></label>
-                    <input onChange={this.props.handleChange} value={this.props.contacts['']} type="text" placeholder="search contact" name="search" required/>
+                    <input onChange={this.props.handleChange} type="text" placeholder="search contact" name="search" required/>
                     <label forhtml="Search"></label>
-                    <input onClick={this.props.handleClick} type="submit" value="search" />
+                    <input onClick={this.props.handleSearch} type="submit" value="search" />
                 </form>
                 
             </div>
