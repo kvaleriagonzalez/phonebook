@@ -1,0 +1,47 @@
+
+h1 {
+  text-align: center;
+}
+
+ul li::marker {
+  text-decoration: none;
+}
+
+body {
+  background-image: url('/drew-beamer-5DD7-L4A4Uw-unsplash.jpg');
+  background-size: cover;
+  height: 100vh;
+  margin:20px;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+input[type="submit"], 
+button {
+  padding: 4px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+span {
+  background-color:#ac7349;
+  margin:10px;
+}
+
+p {
+  background-color: rgb(0, 0, 0, 0.71);
+  color:white;
+  display: inline;
+  padding: 7px 0;
+
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
