@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/project-five-karen-gonzalez/static/css/main.dd04b511.chunk.css",
+    "main.js": "/project-five-karen-gonzalez/static/js/main.523a8206.chunk.js",
+    "main.js.map": "/project-five-karen-gonzalez/static/js/main.523a8206.chunk.js.map",
+    "runtime-main.js": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js",
+    "runtime-main.js.map": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js.map",
+    "static/js/2.e62d4d33.chunk.js": "/project-five-karen-gonzalez/static/js/2.e62d4d33.chunk.js",
+    "static/js/2.e62d4d33.chunk.js.map": "/project-five-karen-gonzalez/static/js/2.e62d4d33.chunk.js.map",
+    "index.html": "/project-five-karen-gonzalez/index.html",
+    "precache-manifest.48bfb73943747adadc84d55ac59b2135.js": "/project-five-karen-gonzalez/precache-manifest.48bfb73943747adadc84d55ac59b2135.js",
+    "service-worker.js": "/project-five-karen-gonzalez/service-worker.js",
+    "static/css/main.dd04b511.chunk.css.map": "/project-five-karen-gonzalez/static/css/main.dd04b511.chunk.css.map",
+    "static/js/2.e62d4d33.chunk.js.LICENSE.txt": "/project-five-karen-gonzalez/static/js/2.e62d4d33.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18e50e16.js",
+    "static/js/2.e62d4d33.chunk.js",
+    "static/css/main.dd04b511.chunk.css",
+    "static/js/main.523a8206.chunk.js"
+  ]
+}
