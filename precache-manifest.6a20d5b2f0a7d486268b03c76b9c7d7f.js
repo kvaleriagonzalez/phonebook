@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae71c0f14dd0c2c9aeaadb5544401e7c",
+    "revision": "810b9059e36ccf52d7ea193bc5c86e48",
     "url": "/project-five-karen-gonzalez/index.html"
   },
   {
-    "revision": "23fb519bc030ad904f8c",
-    "url": "/project-five-karen-gonzalez/static/css/main.7484495d.chunk.css"
+    "revision": "35e8348b2e24d1da1735",
+    "url": "/project-five-karen-gonzalez/static/css/main.d4924252.chunk.css"
   },
   {
     "revision": "eb0c45fcdb3f13618cf0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/project-five-karen-gonzalez/static/js/2.e62d4d33.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "23fb519bc030ad904f8c",
-    "url": "/project-five-karen-gonzalez/static/js/main.6f775da3.chunk.js"
+    "revision": "35e8348b2e24d1da1735",
+    "url": "/project-five-karen-gonzalez/static/js/main.0f46ed2a.chunk.js"
   },
   {
     "revision": "6db81e18d379e5c2d75e",
