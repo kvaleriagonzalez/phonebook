@@ -16,7 +16,7 @@ class App extends Component {
       number: "",
       search: "",
       searchResults: [],
-      image: "https:cdn2.thecatapi.com/images/6ql.gif",
+      image: "https://cdn2.thecatapi.com/images/6ql.gif",
       //Array("https://cdn2.thecatapi.com/images/6ql.gif",
       //"https://cdn2.thecatapi.com/images/3ln.gif",
       //"https://cdn2.thecatapi.com/images/2or.gif")
