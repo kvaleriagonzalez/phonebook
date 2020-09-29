@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/project-five-karen-gonzalez/static/css/main.bc5217aa.chunk.css",
-    "main.js": "/project-five-karen-gonzalez/static/js/main.d373abf7.chunk.js",
-    "main.js.map": "/project-five-karen-gonzalez/static/js/main.d373abf7.chunk.js.map",
+    "main.js": "/project-five-karen-gonzalez/static/js/main.f883d380.chunk.js",
+    "main.js.map": "/project-five-karen-gonzalez/static/js/main.f883d380.chunk.js.map",
     "runtime-main.js": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js",
     "runtime-main.js.map": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js.map",
     "static/js/2.b308453c.chunk.js": "/project-five-karen-gonzalez/static/js/2.b308453c.chunk.js",
     "static/js/2.b308453c.chunk.js.map": "/project-five-karen-gonzalez/static/js/2.b308453c.chunk.js.map",
     "index.html": "/project-five-karen-gonzalez/index.html",
-    "precache-manifest.9752c779a981174467d4d8ae313527f0.js": "/project-five-karen-gonzalez/precache-manifest.9752c779a981174467d4d8ae313527f0.js",
+    "precache-manifest.6d55f680400d2685cc72faf87f205579.js": "/project-five-karen-gonzalez/precache-manifest.6d55f680400d2685cc72faf87f205579.js",
     "service-worker.js": "/project-five-karen-gonzalez/service-worker.js",
     "static/css/main.bc5217aa.chunk.css.map": "/project-five-karen-gonzalez/static/css/main.bc5217aa.chunk.css.map",
     "static/js/2.b308453c.chunk.js.LICENSE.txt": "/project-five-karen-gonzalez/static/js/2.b308453c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.18e50e16.js",
     "static/js/2.b308453c.chunk.js",
     "static/css/main.bc5217aa.chunk.css",
-    "static/js/main.d373abf7.chunk.js"
+    "static/js/main.f883d380.chunk.js"
   ]
 }
