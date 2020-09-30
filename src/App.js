@@ -6,7 +6,7 @@ import SearchBar from './SearchBar';
 import FormSubmit from './FormSubmit';
 import './App.css';
 
-
+//APP COMPONENT
 class App extends Component {
   constructor() {
     super();
@@ -16,51 +16,49 @@ class App extends Component {
       number: "",
       search: "",
       searchResults: [],
-      image: "https://cdn2.thecatapi.com/images/6ql.gif",
-      //Array("https://cdn2.thecatapi.com/images/6ql.gif",
-      //"https://cdn2.thecatapi.com/images/3ln.gif",
-      //"https://cdn2.thecatapi.com/images/2or.gif")
     };
   }
 
   componentDidMount() {
-
-    // create a Firebase reference
+    // CREATE A FIREBASE REFERENCE
     const dbRef = firebase.database().ref();
-  
-    dbRef.on("value", (response) => {
-    const newState =[];
-    const data = response.val();
 
-    for (const key in data) {
-      newState.push({
-        key: key,
-        contacts: data[key]
+    dbRef.on("value", (response) => {
+      const newState = [];
+      const data = response.val();
+      // CREATE KEY
+      for (const key in data) {
+        newState.push({
+          key: key,
+          contacts: data[key],
+        });
+      }
+      //UPDATING REACT INPUT
+      this.setState({
+        contacts: newState,
       });
-    }
-    // update our React state 
-    this.setState({
-      contacts: newState,
     });
-  });
   }
 
-
-
-  // get user input and update the userInput state
+  //GET USER INPUT AND UPDATE STATE
   handleChange = (event) => {
-    event.preventDefault();
-    //console.log(event.target.value);  // user input data
+   event.preventDefault();
+
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
-  };
+   };
 
+  //HANDLE CLICK FUNCTION / GETTING API DATA
+  handleClick = (event,name,number) => {
+    event.preventDefault();
+   if (name === "" || number === "")  {
+        //alert("please fill in the blanks ");
+        document.getElementById('error').textContent = 'please fill in the blanks';
+        
+        } else { 
+          
 
- 
-      
-  handleClick = (event) => {
-     event.preventDefault();
      axios({
        url:
          "https://api.thecatapi.com/v1/images/search/?api_key=85887931-8d04-4f23-a9fd-380b976e7e87&mime_types=gif",
@@ -69,110 +67,116 @@ class App extends Component {
        params: {
          key: "85887931-8d04-4f23-a9fd-380b976e7e87",
          mime_types: "gif",
-
        },
      }).then((response) => {
-       console.log(response.data);
+       //STORE URL IN VARIABLE
+       const picture = response.data[0].url;
 
-       // open portal to Firebase
+       // OPEN PORTAL TO FIREBASE
        const dbRef = firebase.database().ref();
        const contacts = {
-         name: this.state.name,
-         number: this.state.number,
-         image: this.state.image,
+         name: name,
+         number: number,
+         image: picture,
        };
-       // add new record to Firebase
+       // ADD NEW RECORD TO FIREBASE
        dbRef.push(contacts);
-       // reset input field
-       this.setState({
-         name: "",
-         number: "",
-       });
+
+       // // RESET INPUT FIELD WHEN FORM IS SUBMITTED
+       // this.setState({
+       //   name: "",
+       //   number: "",
+       //});
      });
+    }
   };
-
- //selectedRandomImage = () => {
- //const randomImage = image[Math.floor(Math.random() * image.length)];
-//}
-
-
-
-  // delete that specific contact from Firebase
+  
+  // DELETE SELECTED USER FROM FIREBASE
   handleRemove = (contactDelete) => {
-   // console.log(contactDelete);
-    // open portal to Firebase
     const dbRef = firebase.database().ref();
-    // delete the book based on bookKey
     dbRef.child(contactDelete).remove();
   };
 
+  //HANDLE SEARCH
   handleSearch = (event) => {
     event.preventDefault();
-
-// this.state.search is the state that we want to look for / inside search contact[]
-   const results = this.state.contacts.filter((item) => {
-    return item.contacts.name === this.state.search
-
-   })
-    console.log(results)
+    // MATCHING CONTACT WHEN USER CLICK SEARCH
+    const results = this.state.contacts.filter((item) => {
+      return item.contacts.name === this.state.search;
+    });
+    console.log(results);
     this.setState({
       search: "",
-      searchResults: results
-    })
-  
-  }
+      searchResults: results,
+    });
+  };
 
+  //RENDER = HTML
   render() {
     return (
       <header>
         <div className="wrapper">
-            <h1>My PhoneBook</h1>
-              <div>
-              <FormSubmit handleChange = {this.handleChange} contacts = {this.state.contacts} handleClick = {this.handleClick} />
-              
-              </div>  
-              <ul>
-                {
-                  // display  here
-                  this.state.contacts.map((contact,index) => { if (index > 2) {
-                    return null
-                  }
-                    return (
-                      <li key={contact.key}>
-                        <p>
-                          <span>Name:</span> {contact.contacts.name}<span> Number: </span>{contact.contacts.number}
-                          <button onClick={() => this.handleRemove(contact.key)}> delete</button>
-                        </p>
-                        {/* button to delete contact */}
-                        
-                      </li>
-                    );
-                  })
-                }
-            </ul>
-          <SearchBar handleChange={this.handleChange} contacts={this.state.contacts} handleSearch={this.handleSearch}/>
+          <h1>My PhoneBook</h1>
+          <div>
+            <FormSubmit
+              handleChange={this.handleChange}
+              contacts={this.state.contacts}
+              name={this.state.name}
+              number={this.state.number}
+              handleClick={this.handleClick}
+            />
+          </div>
           <ul>
             {
-              // display  here 
-              this.state.searchResults.map((contact) => {
+              //CONTACT WILL BE DISPLAY
+
+              this.state.contacts.map((contact, index) => {
+                if (index > 2) {
+                  return null;
+                }
+
                 return (
                   <li key={contact.key}>
                     <p>
-                      <span>Name:</span> {contact.contacts.name}<span> Number: </span>{contact.contacts.number}
+                      <span>Name:</span> {contact.contacts.name}
+                      <span> Number: </span>
+                      {contact.contacts.number}
+                      {/* CONTACT WILL BE DELETE WHEN USER CLICK BUTTON */}
+                      <button onClick={() => this.handleRemove(contact.key)}>
+                        {" "}
+                        delete
+                      </button>
                     </p>
-                    <div>
-                      
-                          <img src={contact.contacts.image} alt="cat" />
-                      
-                        
-                    </div>
-
                   </li>
                 );
               })
             }
           </ul>
-
+          {/* SEARCH COMPONENT WILL DISPLAY HERE */}
+          <SearchBar
+            handleChange={this.handleChange}
+            contacts={this.state.contacts}
+            handleSearch={this.handleSearch}
+          />
+          <ul>
+            {
+              // WHEN USER CLICK SEARCH CONTACT STORED IN FIREBASE WILL BE DISPLAY HERE WITH A IMAGE USE FROM API
+              this.state.searchResults.map((contact) => {
+                return (
+                  <li key={contact.key}>
+                    <p>
+                      <span>Name:</span> {contact.contacts.name}
+                      <span> Number: </span>
+                      {contact.contacts.number}
+                    </p>
+                    <div>
+                      <img src={contact.contacts.image} alt="cat" />
+                    </div>
+                  </li>
+                );
+              })
+            }
+          </ul>
         </div>
       </header>
     );
@@ -180,3 +184,6 @@ class App extends Component {
 }
 
 export default App;
+
+ 
+  
