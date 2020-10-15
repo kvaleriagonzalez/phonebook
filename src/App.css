@@ -8,11 +8,11 @@ ul li::marker {
 }
 
 body {
-  background-image: url('./luca-bravo-xnqVGsbXgV4-unsplash.jpg') ;
+  background-image: url('./luca-bravo-xnqVGsbXgV4-unsplash.jpg');
   background-size: cover;
   height: 100vh;
   margin:20px;
-  background-color:rgba(0, 119, 15, 0.71);
+  background-color:rgba(162, 230, 252, 0.71);
 }
 
 .wrapper{
