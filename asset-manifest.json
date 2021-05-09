@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/project-five-karen-gonzalez/static/css/main.15182f73.chunk.css",
-    "main.js": "/project-five-karen-gonzalez/static/js/main.91262a0b.chunk.js",
-    "main.js.map": "/project-five-karen-gonzalez/static/js/main.91262a0b.chunk.js.map",
-    "runtime-main.js": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js",
-    "runtime-main.js.map": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js.map",
-    "static/js/2.850ab8a2.chunk.js": "/project-five-karen-gonzalez/static/js/2.850ab8a2.chunk.js",
-    "static/js/2.850ab8a2.chunk.js.map": "/project-five-karen-gonzalez/static/js/2.850ab8a2.chunk.js.map",
-    "index.html": "/project-five-karen-gonzalez/index.html",
-    "precache-manifest.df4f5a10093f68b3c63ed13acb1e9bc2.js": "/project-five-karen-gonzalez/precache-manifest.df4f5a10093f68b3c63ed13acb1e9bc2.js",
-    "service-worker.js": "/project-five-karen-gonzalez/service-worker.js",
-    "static/css/main.15182f73.chunk.css.map": "/project-five-karen-gonzalez/static/css/main.15182f73.chunk.css.map",
-    "static/js/2.850ab8a2.chunk.js.LICENSE.txt": "/project-five-karen-gonzalez/static/js/2.850ab8a2.chunk.js.LICENSE.txt"
+    "main.css": "/kvaleriagonzalez/phonebook/static/css/main.2a58b5f4.chunk.css",
+    "main.js": "/kvaleriagonzalez/phonebook/static/js/main.f6cffb03.chunk.js",
+    "main.js.map": "/kvaleriagonzalez/phonebook/static/js/main.f6cffb03.chunk.js.map",
+    "runtime-main.js": "/kvaleriagonzalez/phonebook/static/js/runtime-main.3d876d6e.js",
+    "runtime-main.js.map": "/kvaleriagonzalez/phonebook/static/js/runtime-main.3d876d6e.js.map",
+    "static/js/2.d2733c70.chunk.js": "/kvaleriagonzalez/phonebook/static/js/2.d2733c70.chunk.js",
+    "static/js/2.d2733c70.chunk.js.map": "/kvaleriagonzalez/phonebook/static/js/2.d2733c70.chunk.js.map",
+    "index.html": "/kvaleriagonzalez/phonebook/index.html",
+    "precache-manifest.1dc0638347f9a5f9d2a1b78de082ec6b.js": "/kvaleriagonzalez/phonebook/precache-manifest.1dc0638347f9a5f9d2a1b78de082ec6b.js",
+    "service-worker.js": "/kvaleriagonzalez/phonebook/service-worker.js",
+    "static/css/main.2a58b5f4.chunk.css.map": "/kvaleriagonzalez/phonebook/static/css/main.2a58b5f4.chunk.css.map",
+    "static/js/2.d2733c70.chunk.js.LICENSE.txt": "/kvaleriagonzalez/phonebook/static/js/2.d2733c70.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.18e50e16.js",
-    "static/js/2.850ab8a2.chunk.js",
-    "static/css/main.15182f73.chunk.css",
-    "static/js/main.91262a0b.chunk.js"
+    "static/js/runtime-main.3d876d6e.js",
+    "static/js/2.d2733c70.chunk.js",
+    "static/css/main.2a58b5f4.chunk.css",
+    "static/js/main.f6cffb03.chunk.js"
   ]
 }
