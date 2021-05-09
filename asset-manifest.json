@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kvaleriagonzalez/phonebook/static/css/main.2a58b5f4.chunk.css",
-    "main.js": "/kvaleriagonzalez/phonebook/static/js/main.55852b57.chunk.js",
-    "main.js.map": "/kvaleriagonzalez/phonebook/static/js/main.55852b57.chunk.js.map",
-    "runtime-main.js": "/kvaleriagonzalez/phonebook/static/js/runtime-main.3d876d6e.js",
-    "runtime-main.js.map": "/kvaleriagonzalez/phonebook/static/js/runtime-main.3d876d6e.js.map",
-    "static/js/2.9ba29ad4.chunk.js": "/kvaleriagonzalez/phonebook/static/js/2.9ba29ad4.chunk.js",
-    "static/js/2.9ba29ad4.chunk.js.map": "/kvaleriagonzalez/phonebook/static/js/2.9ba29ad4.chunk.js.map",
-    "index.html": "/kvaleriagonzalez/phonebook/index.html",
-    "precache-manifest.e4302c469b67a220dcd6608edc6b124d.js": "/kvaleriagonzalez/phonebook/precache-manifest.e4302c469b67a220dcd6608edc6b124d.js",
-    "service-worker.js": "/kvaleriagonzalez/phonebook/service-worker.js",
-    "static/css/main.2a58b5f4.chunk.css.map": "/kvaleriagonzalez/phonebook/static/css/main.2a58b5f4.chunk.css.map",
-    "static/js/2.9ba29ad4.chunk.js.LICENSE.txt": "/kvaleriagonzalez/phonebook/static/js/2.9ba29ad4.chunk.js.LICENSE.txt"
+    "main.css": "/phonebook/static/css/main.2a58b5f4.chunk.css",
+    "main.js": "/phonebook/static/js/main.060eafd3.chunk.js",
+    "main.js.map": "/phonebook/static/js/main.060eafd3.chunk.js.map",
+    "runtime-main.js": "/phonebook/static/js/runtime-main.f8384f6c.js",
+    "runtime-main.js.map": "/phonebook/static/js/runtime-main.f8384f6c.js.map",
+    "static/js/2.f4e5d315.chunk.js": "/phonebook/static/js/2.f4e5d315.chunk.js",
+    "static/js/2.f4e5d315.chunk.js.map": "/phonebook/static/js/2.f4e5d315.chunk.js.map",
+    "index.html": "/phonebook/index.html",
+    "precache-manifest.aea0c46fe250f604a4a2a77a7466c05e.js": "/phonebook/precache-manifest.aea0c46fe250f604a4a2a77a7466c05e.js",
+    "service-worker.js": "/phonebook/service-worker.js",
+    "static/css/main.2a58b5f4.chunk.css.map": "/phonebook/static/css/main.2a58b5f4.chunk.css.map",
+    "static/js/2.f4e5d315.chunk.js.LICENSE.txt": "/phonebook/static/js/2.f4e5d315.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3d876d6e.js",
-    "static/js/2.9ba29ad4.chunk.js",
+    "static/js/runtime-main.f8384f6c.js",
+    "static/js/2.f4e5d315.chunk.js",
     "static/css/main.2a58b5f4.chunk.css",
-    "static/js/main.55852b57.chunk.js"
+    "static/js/main.060eafd3.chunk.js"
   ]
 }
