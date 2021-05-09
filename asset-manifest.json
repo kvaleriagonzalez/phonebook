@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/kvaleriagonzalez/phonebook/static/css/main.2a58b5f4.chunk.css",
-    "main.js": "/kvaleriagonzalez/phonebook/static/js/main.f6cffb03.chunk.js",
-    "main.js.map": "/kvaleriagonzalez/phonebook/static/js/main.f6cffb03.chunk.js.map",
+    "main.js": "/kvaleriagonzalez/phonebook/static/js/main.55852b57.chunk.js",
+    "main.js.map": "/kvaleriagonzalez/phonebook/static/js/main.55852b57.chunk.js.map",
     "runtime-main.js": "/kvaleriagonzalez/phonebook/static/js/runtime-main.3d876d6e.js",
     "runtime-main.js.map": "/kvaleriagonzalez/phonebook/static/js/runtime-main.3d876d6e.js.map",
-    "static/js/2.d2733c70.chunk.js": "/kvaleriagonzalez/phonebook/static/js/2.d2733c70.chunk.js",
-    "static/js/2.d2733c70.chunk.js.map": "/kvaleriagonzalez/phonebook/static/js/2.d2733c70.chunk.js.map",
+    "static/js/2.9ba29ad4.chunk.js": "/kvaleriagonzalez/phonebook/static/js/2.9ba29ad4.chunk.js",
+    "static/js/2.9ba29ad4.chunk.js.map": "/kvaleriagonzalez/phonebook/static/js/2.9ba29ad4.chunk.js.map",
     "index.html": "/kvaleriagonzalez/phonebook/index.html",
-    "precache-manifest.1dc0638347f9a5f9d2a1b78de082ec6b.js": "/kvaleriagonzalez/phonebook/precache-manifest.1dc0638347f9a5f9d2a1b78de082ec6b.js",
+    "precache-manifest.e4302c469b67a220dcd6608edc6b124d.js": "/kvaleriagonzalez/phonebook/precache-manifest.e4302c469b67a220dcd6608edc6b124d.js",
     "service-worker.js": "/kvaleriagonzalez/phonebook/service-worker.js",
     "static/css/main.2a58b5f4.chunk.css.map": "/kvaleriagonzalez/phonebook/static/css/main.2a58b5f4.chunk.css.map",
-    "static/js/2.d2733c70.chunk.js.LICENSE.txt": "/kvaleriagonzalez/phonebook/static/js/2.d2733c70.chunk.js.LICENSE.txt"
+    "static/js/2.9ba29ad4.chunk.js.LICENSE.txt": "/kvaleriagonzalez/phonebook/static/js/2.9ba29ad4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3d876d6e.js",
-    "static/js/2.d2733c70.chunk.js",
+    "static/js/2.9ba29ad4.chunk.js",
     "static/css/main.2a58b5f4.chunk.css",
-    "static/js/main.f6cffb03.chunk.js"
+    "static/js/main.55852b57.chunk.js"
   ]
 }
