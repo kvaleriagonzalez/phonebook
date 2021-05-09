@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/phonebook/static/css/main.3ef25e73.chunk.css",
-    "main.js": "/phonebook/static/js/main.2ea07e30.chunk.js",
-    "main.js.map": "/phonebook/static/js/main.2ea07e30.chunk.js.map",
-    "runtime-main.js": "/phonebook/static/js/runtime-main.74c37ca1.js",
-    "runtime-main.js.map": "/phonebook/static/js/runtime-main.74c37ca1.js.map",
-    "static/js/2.091c474a.chunk.js": "/phonebook/static/js/2.091c474a.chunk.js",
-    "static/js/2.091c474a.chunk.js.map": "/phonebook/static/js/2.091c474a.chunk.js.map",
-    "index.html": "/phonebook/index.html",
-    "precache-manifest.29682b5e75985ecda1b77f5329b24554.js": "/phonebook/precache-manifest.29682b5e75985ecda1b77f5329b24554.js",
-    "service-worker.js": "/phonebook/service-worker.js",
-    "static/css/main.3ef25e73.chunk.css.map": "/phonebook/static/css/main.3ef25e73.chunk.css.map",
-    "static/js/2.091c474a.chunk.js.LICENSE.txt": "/phonebook/static/js/2.091c474a.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/phonebook/static/media/luca-bravo-xnqVGsbXgV4-unsplash.7569eff7.jpg"
+    "main.css": "/project-five-karen-gonzalez/static/css/main.15182f73.chunk.css",
+    "main.js": "/project-five-karen-gonzalez/static/js/main.91262a0b.chunk.js",
+    "main.js.map": "/project-five-karen-gonzalez/static/js/main.91262a0b.chunk.js.map",
+    "runtime-main.js": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js",
+    "runtime-main.js.map": "/project-five-karen-gonzalez/static/js/runtime-main.18e50e16.js.map",
+    "static/js/2.850ab8a2.chunk.js": "/project-five-karen-gonzalez/static/js/2.850ab8a2.chunk.js",
+    "static/js/2.850ab8a2.chunk.js.map": "/project-five-karen-gonzalez/static/js/2.850ab8a2.chunk.js.map",
+    "index.html": "/project-five-karen-gonzalez/index.html",
+    "precache-manifest.df4f5a10093f68b3c63ed13acb1e9bc2.js": "/project-five-karen-gonzalez/precache-manifest.df4f5a10093f68b3c63ed13acb1e9bc2.js",
+    "service-worker.js": "/project-five-karen-gonzalez/service-worker.js",
+    "static/css/main.15182f73.chunk.css.map": "/project-five-karen-gonzalez/static/css/main.15182f73.chunk.css.map",
+    "static/js/2.850ab8a2.chunk.js.LICENSE.txt": "/project-five-karen-gonzalez/static/js/2.850ab8a2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.74c37ca1.js",
-    "static/js/2.091c474a.chunk.js",
-    "static/css/main.3ef25e73.chunk.css",
-    "static/js/main.2ea07e30.chunk.js"
+    "static/js/runtime-main.18e50e16.js",
+    "static/js/2.850ab8a2.chunk.js",
+    "static/css/main.15182f73.chunk.css",
+    "static/js/main.91262a0b.chunk.js"
   ]
 }
