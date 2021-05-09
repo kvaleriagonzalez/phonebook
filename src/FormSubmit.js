@@ -25,7 +25,6 @@ class FormSubmit extends Component {
       //WHEN USER PUT INPUT / DISPLAY INFORMATION IN RENDER
       <div>
         <h2>Create contact</h2>
-        <p id="error"></p>
         <form action="submit">
           <label forhtml="name"></label>
           <input
@@ -53,10 +52,14 @@ class FormSubmit extends Component {
               this.props.handleClick(event, this.state.name, this.state.number)
             }
             type="submit"
-            value="New Contact"
+            value="Add"
           />
         </form>
+        <div>
+            <p id="error"></p>
+        </div>
         <p class="text-info">only 3 contact will be display</p>
+        <p className="text-info-p">find the rest of them in you contact list</p>
       </div>
     );
   }

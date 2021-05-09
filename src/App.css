@@ -1,6 +1,12 @@
 
+
 h1 {
   text-align: center;
+  font-size: 4rem;
+  text-shadow: 5px 5px blue;
+}
+h2 {
+  text-transform: uppercase;
 }
 
 ul li::marker {
@@ -8,11 +14,10 @@ ul li::marker {
 }
 
 body {
-  background-image: url('./luca-bravo-xnqVGsbXgV4-unsplash.jpg');
-  background-size: cover;
+  color: white;
   height: 100vh;
   margin:20px;
-  background-color:rgba(162, 230, 252, 0.71);
+  background-color:#191414;
 }
 
 .wrapper{
@@ -20,26 +25,40 @@ body {
   margin: 0 auto;
 
 }
+.add-contact {
+  background:#3e3effde;
+  width: 35%;
+  border-radius: 30px;
+  margin-top:70px;
+  padding: 27px;
+  height: fit-content;
+  border: 5px solid;
+}
 input[type="submit"], 
 button {
-  padding: 4px;
+  margin-left:5px;
+  padding: 8px;
+  border: none;
+  font-size: 14px;
 }
 
 button {
   margin-left: 10px;
+  border-radius: 5px;
 }
 
 span {
-  background-color:#ac7349;
-  margin:20px;
-
+  background-color:#1DB954;
+  border-radius: 5px;
+  margin: 7px 12px;
+  padding: 5px 22px;
 }
 
 p {
-  background-color: rgb(0, 0, 0, 0.71);
+  border: 1px solid white;
   color:white;
   display: inline-block;
-  padding: 7px 5px;
+  padding: 13px 14px 16px 0px;
   margin-bottom: 5px;
 }
 
@@ -49,17 +68,62 @@ ul {
 }
 
 img {
-  width:30%;
+  width:81%;
 }
 
 #error{
   padding: 0;
-  color:#ff3410;;
+  color:#ff3410;
+  border: none;
+  text-transform: uppercase;
  
 }
 
 .text-info {
-  background-color:white;
-  color:#016001;
-  border-radius: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border:none;
+  font-weight: bold;
+}
+#name,#number, input  {
+  padding: 8px;
+  border: none;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.fa-trash {
+  font-size: 20px;
+  margin-left:10px;
+  color:#f8e807f2;
+}
+#name,#number {
+width: 21%;
+}
+.search {
+  background: turquoise;
+  width: 35%;
+  border-radius: 30px;
+  padding: 27px;
+  margin-top: 70px;
+  height: fit-content;
+  border: 5px solid;
+}
+.color-search {
+  color:#3e3effde;
+}
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.text-info-p {
+  border:none;
+  font-size: 20px;
+  color:white;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+.search input {
+  text-transform: capitalize;
 }

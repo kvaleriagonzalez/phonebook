@@ -117,66 +117,69 @@ class App extends Component {
       <header>
         <div className="wrapper">
           <h1>My PhoneBook</h1>
-          <div>
-            <FormSubmit
+          <div className="wrapper flex">
+            <div className="add-contact">
+              <FormSubmit
+                handleChange={this.handleChange}
+                contacts={this.state.contacts}
+                name={this.state.name}
+                number={this.state.number}
+                handleClick={this.handleClick}
+              />
+                <ul>
+                {
+                  //CONTACT WILL BE DISPLAY
+
+                  this.state.contacts.map((contact, index) => {
+                    if (index > 2) {
+                      return null;
+                    }
+
+                    return (
+                      <li key={contact.key}>
+                        <p>
+                          <span>Name:</span> {contact.contacts.name}
+                          <span> Number: </span>
+                          {contact.contacts.number}
+                          {/* CONTACT WILL BE DELETE WHEN USER CLICK BUTTON */}
+                          <i class="fas fa-trash" onClick={() => this.handleRemove(contact.key)}>
+                            {" "}
+                          </i>
+                        </p>
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+            </div>
+            <div className="search">
+            {/* SEARCH COMPONENT WILL DISPLAY HERE */}
+            <SearchBar
               handleChange={this.handleChange}
               contacts={this.state.contacts}
-              name={this.state.name}
-              number={this.state.number}
-              handleClick={this.handleClick}
+              handleSearch={this.handleSearch}
             />
-          </div>
-          <ul>
-            {
-              //CONTACT WILL BE DISPLAY
-
-              this.state.contacts.map((contact, index) => {
-                if (index > 2) {
-                  return null;
+              <ul>
+                {
+                  // WHEN USER CLICK SEARCH CONTACT STORED IN FIREBASE WILL BE DISPLAY HERE WITH A IMAGE USE FROM API
+                  this.state.searchResults.map((contact) => {
+                    return (
+                      <li key={contact.key}>
+                        <p>
+                          <span>Name:</span> {contact.contacts.name}
+                          <span> Number: </span>
+                          {contact.contacts.number}
+                        </p>
+                        <div>
+                          <img src={contact.contacts.image} alt="cat" />
+                        </div>
+                      </li>
+                    );
+                  })
                 }
-
-                return (
-                  <li key={contact.key}>
-                    <p>
-                      <span>Name:</span> {contact.contacts.name}
-                      <span> Number: </span>
-                      {contact.contacts.number}
-                      {/* CONTACT WILL BE DELETE WHEN USER CLICK BUTTON */}
-                      <button onClick={() => this.handleRemove(contact.key)}>
-                        {" "}
-                        delete
-                      </button>
-                    </p>
-                  </li>
-                );
-              })
-            }
-          </ul>
-          {/* SEARCH COMPONENT WILL DISPLAY HERE */}
-          <SearchBar
-            handleChange={this.handleChange}
-            contacts={this.state.contacts}
-            handleSearch={this.handleSearch}
-          />
-          <ul>
-            {
-              // WHEN USER CLICK SEARCH CONTACT STORED IN FIREBASE WILL BE DISPLAY HERE WITH A IMAGE USE FROM API
-              this.state.searchResults.map((contact) => {
-                return (
-                  <li key={contact.key}>
-                    <p>
-                      <span>Name:</span> {contact.contacts.name}
-                      <span> Number: </span>
-                      {contact.contacts.number}
-                    </p>
-                    <div>
-                      <img src={contact.contacts.image} alt="cat" />
-                    </div>
-                  </li>
-                );
-              })
-            }
-          </ul>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
     );
