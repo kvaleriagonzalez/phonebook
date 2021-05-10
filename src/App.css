@@ -15,7 +15,6 @@ ul li::marker {
 
 body {
   color: white;
-  height: 100vh;
   margin:20px;
   background-color:#191414;
 }
@@ -29,7 +28,7 @@ body {
   background:#3e3effde;
   width: 35%;
   border-radius: 30px;
-  margin-top:70px;
+  margin-top:50px;
   padding: 27px;
   height: fit-content;
   border: 5px solid;
@@ -105,7 +104,7 @@ width: 21%;
   width: 35%;
   border-radius: 30px;
   padding: 27px;
-  margin-top: 70px;
+  margin-top: 50px;
   height: fit-content;
   border: 5px solid;
 }
@@ -124,7 +123,4 @@ width: 21%;
   margin: 0;
   padding: 0;
 }
-.search input {
-  text-transform: capitalize;
-}
-/* testing */
+
