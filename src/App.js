@@ -138,7 +138,8 @@ class App extends Component {
                     return (
                       <li key={contact.key}>
                         <p>
-                          <span>Name:</span> {contact.contacts.name}
+                          <span>Name:</span>
+                          {contact.contacts.name}
                           <span> Number: </span>
                           {contact.contacts.number}
                           {/* CONTACT WILL BE DELETE WHEN USER CLICK BUTTON */}

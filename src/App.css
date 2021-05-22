@@ -51,14 +51,12 @@ button {
 span {
   background-color:#1DB954;
   border-radius: 5px;
-  margin: 7px 12px;
   padding: 5px 22px;
 }
 
 p {
   border: 1px solid white;
   color:white;
-  display: inline-block;
   padding: 13px 14px 16px 0px;
   margin-bottom: 5px;
 }
@@ -78,6 +76,13 @@ img {
   border: none;
   text-transform: uppercase;
  
+}
+.add-contact > ul > li > p {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+overflow-wrap: anywhere;
+padding: 10px 11px;
 }
 
 .text-info {
@@ -99,7 +104,7 @@ img {
   color:#f8e807f2;
 }
 #name,#number {
-width: 21%;
+width: 36%;
 }
 .search {
   background: turquoise;
@@ -125,4 +130,27 @@ width: 21%;
   margin: 0;
   padding: 0;
 }
+.search > ul > li > p {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+overflow-wrap: anywhere;
+padding: 10px 11px;
+margin:10px;
+}
+span {
+margin-right: 13px;
+}
+.add-contact > ul > li > p > span:nth-child(2) {
+margin-left: 5px;
+}
+@media (max-width: 940px){
+.add-contact > ul > li {
+display: flex;
+flex-direction: column;
+}
+span {
+width: 30%;
+}
 
+}
