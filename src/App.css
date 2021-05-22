@@ -81,7 +81,6 @@ img {
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-overflow-wrap: anywhere;
 padding: 10px 11px;
 }
 
@@ -134,9 +133,7 @@ width: 36%;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-overflow-wrap: anywhere;
 padding: 10px 11px;
-margin:10px;
 }
 span {
 margin-right: 13px;
@@ -145,12 +142,58 @@ margin-right: 13px;
 margin-left: 5px;
 }
 @media (max-width: 940px){
-.add-contact > ul > li {
+.flex{
 display: flex;
 flex-direction: column;
 }
 span {
 width: 30%;
+margin-bottom: 10px;
+}
+.add-contact,.search {
+width: 69%;
+margin: 0 auto;
+}
+.add-contact {
+  margin-bottom: 30px;
+}
 }
 
+@media (max-width:500px) {
+  h1 {
+font-size: 3rem;
+}
+#name, #number,input {
+width: 100%;
+margin: 3px auto;
+}
+input[type="submit"] {
+  margin-left: 56%;
+  width: 50%;
+}
+.add-contact > ul > li > p > span:nth-child(2) {
+margin-left: 0px;
+}
+img {
+  width: 100%;
+}
+}
+@media (max-width:400px) {
+  h1 {
+font-size: 2rem;
+}
+h2,.text-info,.text-info-p {
+font-size: 15px;
+}
+input[type="submit"] {
+margin-left: 67%;
+}
+#name, #number, input,
+input[type="submit"], button,
+.add-contact > ul:nth-child(2) > li:nth-child(1) > p:nth-child(1) {
+font-size: 12px;
+}
+input[type="submit"] {
+width: 40%;
+}
 }
